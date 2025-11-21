@@ -55,6 +55,8 @@ IK_CONFIG_DICT = {
     },
     "bvh_nokov":{
         "unitree_g1": IK_CONFIG_ROOT / "bvh_nokov_to_g1.json",
+        "booster_t1": IK_CONFIG_ROOT / "bvh_nokov_to_t1.json",
+        "tienkung": IK_CONFIG_ROOT / "bvh_nokov_to_tienkung.json",
     },
     "fbx":{
         "unitree_g1": IK_CONFIG_ROOT / "fbx_to_g1.json",
