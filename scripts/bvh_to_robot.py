@@ -187,13 +187,7 @@ if __name__ == "__main__":
             torch.from_numpy(dof_pos).to(device=device, dtype=torch.float)
         )
         body_names = kinematics_model.body_names
-        
-        # for match xml used in twist(23 dof)
-        # exclude 19-21 26-28
-        # dof_pos = np.hstack((qpos_list[:, 7:26], qpos_list[:, 29:33]))
-        #if ("nokov" == args.format):
-            #dof_pos = np.hstack((dof_pos[:, 0:19], dof_pos[:, 22:26]))
-            
+                    
         motion_data = {
             "fps": motion_fps,
             "root_pos": root_pos,
